@@ -1,0 +1,104 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} FAQ's {% endblock page_name %} {% block content %}
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>faq’s</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="our-faq">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="questions">
+
+                    <div id="accordion" role="tablist">
+                        {% for faq in faq %}
+                        <div class="toggle">
+                            <div class="toggle-heading" role="tab">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{forloop.counter}}" aria-expanded="true" aria-controls="collapse{{forloop.counter}}"> <i class="fa fa-plus"></i>{{faq.quetion|safe}}<i class="fa fa-minus"></i></a>
+                            </div>
+                            <div id="collapse{{forloop.counter}}" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="toggle-body">
+                                    <p>
+                                        {{faq.answer|safe}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="appointment-form">
+
+                    <div class="main-title">
+                        <h2><span>Request <br></span> for Quote</h2>
+                        <p>If you need a perfect laser solution of Diamond laser cuttnig machine then kindly contact us using below form.</p>
+
+                    </div>
+
+                    <div class="form">
+
+
+
+
+                        <section class="bgcolor-a">
+                            <p class="error" id="error" style="display:none;"></p>
+                            <p class="success" id="success" style="display:none;"></p>
+
+                            <div name="appointment_form" id="appointment_form" method="post" onSubmit="return false">
+                                <span class="input input--kohana">
+				<input class="input__field input__field--kohana" type="text" id="name" name="input-29" />
+				<label class="input__label input__label--kohana" for="input-29">
+					<i class="icon-user6 icon icon--kohana"></i>
+					<span class="input__label-content input__label-content--kohana">Your Name</span>
+                                </label>
+                                </span>
+                                <span class="input input--kohana">
+				<input class="input__field input__field--kohana" type="text" id="email" name="input-30"/>
+				<label class="input__label input__label--kohana" for="input-30">
+					<i class="icon-dollar icon icon--kohana"></i>
+					<span class="input__label-content input__label-content--kohana">Email Address</span>
+                                </label>
+                                </span>
+                                <span class="input input--kohana last">
+				<input class="input__field input__field--kohana" type="text" id="contact_num" name="input-31"/>
+				<label class="input__label input__label--kohana" for="input-31">
+					<i class="icon-phone5 icon icon--kohana"></i>
+					<span class="input__label-content input__label-content--kohana">Phone Number</span>
+                                </label>
+                                </span>
+                                <button id="btn-send" name="submit_appointment" class="btn-submit">Get a Quote</button>
+                                <!--onClick="validateAppointment();"-->
+
+                            </div>
+
+                        </section>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock content%}

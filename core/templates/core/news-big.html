@@ -1,0 +1,156 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Blog {% endblock page_name %} {% block content %}
+
+<!--End Header-->
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>
+                    Blog
+</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="news-wraper-big">
+                    {% for news in news %}
+                    <div class="col-md-12">
+                        <div class="news-box">
+                            <div class="img-box">
+                                <img src="{{news.banner_image.url}}" width="100%" />
+                            </div>
+                            <div class="text-box">
+                                <div class="header">
+                                    <h4>{{news.title}}</h4>
+                                    <p>
+                                        <a href=""><i class="fa fa-clock-o" aria-hidden="true"></i>{{news.created_on|date:"M d, Y" }} </a> |
+                                        <a href=""> <i class="fa fa-user" aria-hidden="true"></i>Admin </a> |
+                                        <a href=""> <i class="fa fa-tags" aria-hidden="true"></i>{{news.category_tag}} </a>
+                                        <!-- | <a href=""> <i class="fa fa-comments-o" aria-hidden="true"></i>05 Comments</a> -->
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        {{news.content|slice:":555"|safe}}
+                                    </p>
+                                    <a class="btn hvr-bounce-to-right" href="{% url 'news_artical' news.id %}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-3">
+                <aside class="blog-info">
+                    <!-- <div class="search-box">
+                        <form>
+                            <div class="form-group">
+
+                                <input class="form-control" placeholder="Search..." type="search" />
+                                <button type="submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+
+                            </div>
+                        </form>
+                    </div> -->
+                    <!-- <div class="category-widget">
+                        <div class="title">
+                            <h4>Categories</h4>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">Manufactoring</a>
+                            </li>
+                            <li>
+                                <a href="">Chemical</a>
+                            </li>
+                            <li>
+                                <a href="">Construction</a>
+                            </li>
+                            <li>
+                                <a href="">Energy</a>
+                            </li>
+                            <li>
+                                <a href="">Materials</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="news-widget">
+                        <div class="title">
+                            <h4>Popular Post</h4>
+                        </div>
+
+                        {% for news in news|slice:":5" %}
+                        <div class="news-item">
+                            <figure>
+                                <img src="{{news.banner_image.url}}" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h5><a href="{% url 'news_artical' news.id %}"> {{news.title}}</a></h5>
+                                <p>
+                                    {{news.created_on|date:"M d, Y" }}
+                                </p>
+                            </div>
+                        </div> {% endfor %}
+                    </div>
+                    <!-- <div class="instigram-widget">
+                        <div class="title">
+                            <h4>Text Widget</h4>
+                        </div>
+                        <p>
+                            Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus. Phasellus ullamcorper.
+                        </p>
+
+                    </div> -->
+                    <div class="tags-widget">
+                        <div class="title">
+                            <h4>Popular Tags</h4>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href=""> Future</a>
+                            </li>
+                            <li>
+                                <a href="">Science</a>
+                            </li>
+                            <li>
+                                <a href="">Factory</a>
+                            </li>
+                            <li>
+                                <a href=""> Industrial</a>
+                            </li>
+                            <li>
+                                <a href="">Construction</a>
+                            </li>
+                            <li>
+                                <a href="">Glass</a>
+                            </li>
+                            <li>
+                                <a href="">Helmet</a>
+                            </li>
+                            <li>
+                                <a href="">Wind Energy</a>
+                            </li>
+                            <li>
+                                <a href="">Gloves</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content%}

@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Gallary {% endblock page_name %} {% block content %}
+
+<!--End Header-->
+<!-- The header content -->
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>Gallary</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="projects-section">
+    <div class="container">
+        <div class="row">
+            <div class="thm-container">
+                {% for i in images %}
+                <div class="col-md-4 mix item green">
+                    <img src="{{i.image.url}}" width="250px" alt="{{i.alt1}}">
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="{{i.image.url}}"><i class="fa fa-link" aria-hidden="true"></i><p>{{i.title}}</p></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock content%}

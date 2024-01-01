@@ -1,0 +1,171 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} About Us {% endblock page_name %} {% block content %}
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>About Us</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="overview">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div id="demo">
+
+                    <div class="span12">
+                        <div id="services-slide" class="owl-carousel">
+
+                            {% if about_us.image_main1 %}
+                            <div class="item"><img src="{{about_us.image_main1.url}}" alt="{{about_us.alt1}}">
+                            </div>
+                            {% endif %} {% if about_us.image_main2 %}
+                            <div class="item"><img src="{{about_us.image_main2.url}}" alt="{{about_us.alt2}}">
+                            </div>
+                            {% endif %} {% if about_us.image_main3 %}
+                            <div class="item"><img src="{{about_us.image_main3.url}}" alt="{{about_us.alt3}}">
+                            </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="images">
+                    {% if about_us.image_sub1 %}
+                    <img src="{{about_us.image_sub1.url}}" alt="{{about_us.alt_s1}}" /> {% endif %} {% if about_us.image_sub2 %}
+                    <img src="{{about_us.image_sub2.url}}" alt="{{about_us.alt_s2}}" /> {% endif %} {% if about_us.image_sub3 %}
+                    <img src="{{about_us.image_sub3.url}}" alt="{{about_us.alt_s3}}" /> {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{about_us.description|safe}}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="numbers">
+    <div class="container">
+        <div class="row statistic">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="number-box">
+                            <span class="counter">1500 </span>
+                        </div>
+                        <div class="text-box">
+                            <p>Engineers &amp; Workers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="number-box">
+                            <span class="counter">112</span>
+                        </div>
+                        <div class="text-box">
+                            <p>Factory in Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="number-box">
+                            <span class="counter">359</span>
+                        </div>
+                        <div class="text-box">
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="number-box">
+                            <span class="counter">359</span>
+                        </div>
+                        <div class="text-box">
+                            <p>International Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="why-choose-us-third">
+    <div class="container">
+        <div class="row">
+            {% for why_us in why_us %}
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="icon-box"><i class="{{why_us.fa_icon}}" aria-hidden="true"></i></div>
+                    <h4>{{why_us.title}}</h4>
+                    <p>{{why_us.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<section class="our-team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h2>Our Team</h2>
+                </div>
+
+            </div>
+            <div class="members">
+
+                {% for member in team_member %}
+                <div class="col-md-3">
+                    <div class="member">
+                        <figure>
+                            <img src="{{member.person_image.url}}" alt="awsome image" />
+                            <div class="overlay">
+                                <div class="inner-box">
+                                    <ul class="social">
+                                        {% if member.facebook_profile_link %}
+                                        <li><a href="{{member.facebook_profile_link}}"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+                                        {% endif %} {% if member.linked_in_profile_link %}
+                                        <li><a href="{{member.linked_in_profile_link}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        {% endif %} {% if member.skype_profile_link %}
+                                        <li><a href="{{member.skype_profile_link}}"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="author-info">
+                            <h4>{{member.name}} </h4>
+                            <p>{{member.designation}}</p>
+                            <ul>
+                                <li>Tel: {{member.contact_number}}</li>
+                                <li>Mail: {{member.mail_id}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+{% endblock content%}

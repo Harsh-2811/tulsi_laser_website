@@ -1,0 +1,714 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tulsi Laser Technology</title>
+    <meta name="keywords" content="Tulsi Laser Technology - Diamond Laser Cutting Machine manufacturers, suppliers, exporters, wholesalers and distributors in Surat Gujarat India">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> {{company.meta_tags|safe}}
+    <link rel="icon" type="image/png" href="{% static 'core/assets/images/favicon-medical.png' %}">
+    <meta title="Tulsi Laser Technology - Diamond Laser Cutting Machine manufacturers, suppliers, exporters, wholesalers and distributors in Surat Gujarat India">
+    <meta name="description" content="Diamond Laser Cutting Machine manufacturers, suppliers, exporters, wholesalers and distributor">
+    <meta name="robots" content="index, follow">
+    <!--Font Awsome-->
+    <link href="{% static 'core/assets/css/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!--Medical Guide Icons-->
+    <link href="{% static 'core/assets/fonts/industry-guide-icons.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Default Color-->
+    <link href="{% static 'core/assets/css/default-color.css' %}" rel="stylesheet" id="color" type="text/css">
+
+    <!--bootstrap-->
+    <link href="{% static 'core/assets/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Dropmenu-->
+    <link href="{% static 'core/assets/css/dropmenu.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Sticky Header-->
+    <link href="{% static 'core/assets/css/sticky-header.css' %}" rel="stylesheet" type="text/css">
+
+    <!--revolution-->
+    <link href="{% static 'core/assets/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/assets/css/settings.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/assets/css/extralayers.css' %}" rel="stylesheet" type="text/css">
+
+
+    <link href="{% static 'core/assets/css/flaticon.css' %}" rel="stylesheet" type="text/css">
+    <!--Accordion-->
+    <link href="{% static 'core/assets/css/accordion.css' %}" rel="stylesheet" type="text/css">
+
+    <!--tabs-->
+    <link href="{% static 'core/assets/css/tabs.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Owl Carousel-->
+    <link href="{% static 'core/assets/css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Mobile Menu -->
+    <link rel="stylesheet" type="text/css" href="{% static 'core/assets/css/jquery.mmenu.all.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'core/assets/css/demo.css' %}" />
+
+    <!--main file-->
+    <link href="{% static 'core/assets/css/industry-guide.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'core/assets/css/responsive.css' %}" rel="stylesheet" type="text/css">
+
+    <!--PreLoader-->
+    <link href="{% static 'core/assets/css/loader.css' %}" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <!--Start PreLoader-->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+            <div class="loader">
+                <h1>Loading...</h1>
+                <span></span>
+            </div>
+
+        </div>
+        <!--End PreLoader-->
+        <a href="https://api.whatsapp.com/send?phone=91{{company.whatsapp_number}}&text=Hello" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
+        <!-- CSS -->
+        <style>
+            .float {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                background-color: #25d366;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 2px 2px 3px #999;
+                z-index: 100;
+            }
+            
+            .my-float {
+                margin-top: 16px;
+            }
+        </style>
+
+        <!--Start Header-->
+
+        <div class="top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="welcome-top">
+                            <p>Welcome to Leader in Industrial Solution since {{company.establishment_year}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="social-icons">
+                            <ul>
+                                {% if company.fb_link %}
+                                <li>
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                {% endif %} {% if company.twitter_link %}
+                                <li>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                {% endif %} {% if company.insta_link%}
+                                <li>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        {% if company.logo_small %}
+                        <div class="logo">
+                            <a href="\"><img src="{{ company.logo_small.url }}" width="90px" alt="logo" /></a>
+                        </div>
+                        {% else %}
+                        <div class="logo">
+                            <a href="\"><img src="{% static 'core/assets/images/logo.png' %}" alt="logo" /></a>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-9 sec">
+                        <div class="general-info">
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Phone Number
+                                            <br>
+                                            <span>{{company.contact_number1}}</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="flaticon-contact"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Email Address
+                                            <br>
+                                            <span>{{company.email}}</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <!--
+                                <li>
+                                    <div class="icon">
+                                        <i class="flaticon-trophy"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Global Certificate
+                                            <br>
+                                            <span>ISO-9001-589</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                        <div class="button-wraper pull-right">
+                            <div class="button">
+                                <a class="hvr-bounce-to-right" href="{% static '/core/assets/Tulsi-Laser-Technology-Final-Broucher.pdf' %}" download><i class="fa fa-download" aria-hidden="true"> Broucher</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section class="main-menu finance-navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="meni">
+                            <nav id="main-navigation-wrapper" class="navbar navbar-default">
+                                <div class="navbar-header">
+                                    <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false" class="navbar-toggle collapsed">
+									<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+								</button>
+                                </div>
+                                <div id="main-navigation" class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="{% url 'about_us' %}">About</a>
+                                            <ul class="dropdown-submenu">
+                                                <li><a href="{% url 'about_us' %}">About Us</a></li>
+                                                <li><a href="{% url 'our_team' %}">Our Team</a></li>
+                                                <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+                                                <li><a href="{% url 'faq' %}">Our Faq</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <!-- <li><a href="#">Solutions</a>
+                                            <ul class="dropdown-submenu">
+                                                <li><a href="Material Science and Engineering.html">Material Science and Engineering</a></li>
+                                                <li><a href="chemical research.html">Chemical Research</a></li>
+                                                <li><a href="power and energy.html">Power and Energy</a></li>
+                                                <li><a href="Mechanical Engineering.html">Mechanical Engineering</a></li>
+                                                <li><a href="Petroleum and Gas.html">Petroleum and Gas</a></li>
+                                                <li><a href="Facture Process.html">Facture Process</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li><a href="projects.html">Projects</a>
+                                            <ul class="dropdown-submenu">
+                                                <li><a href="projects.html">Projects</a></li>
+                                                <li><a href="single project.html">Single Project</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li><a href="shop.html">Shop</a>
+                                            <ul class="dropdown-submenu">
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="shop details.html">Product Details</a></li>
+                                                <li><a href="card page.html">Cart Page</a></li>
+                                                <li><a href="Checkout Page.html">Checkout Page</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <li><a href="{% url 'products' %}">Product</a>
+                                            <ul class="dropdown-submenu">
+                                                {% for p in products_list %}
+                                                <li><a href="/product/{{p.link}}">{{p.name}}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                        <li><a href="{% url 'gallary' %}">Gallary</a></li>
+                                        <li><a href="{% url 'news' %}">Blog</a>
+                                            <!-- <ul class="dropdown-submenu">
+                                                <li><a href="news">News</a></li>
+                                                <li><a href="news-big.html">News Default</a></li>
+                                                <li><a href="news-big.html">News Big View</a></li>
+                                                <li><a href="news-single.html">Single News</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li><a href="{% url 'contact_us' %}">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="meni2">
+                            <ul class="search">
+
+                                <!-- <li class="first"><button id="searchDropdown" class="search dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                                    <form class="dropdown-menu">
+                                        <input class="form-control" placeholder="Searcs..." type="text" />
+
+                                    </form>
+                                </li> -->
+                                <li class="download">
+                                    <a href="/#request-quote"> 
+                                        REQUEST A QUOTE</a>
+                                    </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--End Header-->
+        {% if not index_page %}
+        <div class="video-container">
+            <div class="overlay1"></div>
+            <div class="display-3">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <h2>{% block page_name %} {% endblock page_name %}</h2>
+                </div>
+            </div>
+            <div class="largescreen">
+                <!-- <video autoplay muted loop> 
+                    <source src="/static/core/assets/images/bg.mp4" type="video/mp4">
+                </video> -->
+                <img src="/static/core/assets/images/bg.gif" alt="Laser cut Diamond"  width="100%" />
+            </div>
+            <div class="smallscreen">
+                <img src="/static/core/assets/images/bg-small.gif" alt="Laser cut Diamond"  width="100%" />
+            </div>
+        </div>
+
+        {% endif %} {% block content %} {% endblock content%}
+
+        <section class="quote-request">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4>Looking for a quality and affordable Diamond Laser Cutting Machine?</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="btn hvr-bounce-to-right" href="/#request-quote">REQUEST A QUOTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Start Footer-->
+        <footer class="footer" id="footer">
+            <div class="container">
+
+
+                <div class="main-footer">
+                    <div class="row">
+
+
+                        <!-- <div class="col-md-3">
+                            <div class="useful-links">
+                                <div class="title">
+                                    <h5>Industry guide</h5>
+                                </div>
+
+                                <div class="detail">
+                                    <ul>
+
+                                        <li><a href="#.">Home</a></li>
+                                        <li><a href="#.">About Us</a></li>
+                                        <li><a href="#.">Services</a></li>
+                                        <li><a href="#.">Departments</a></li>
+                                        <li><a href="#.">Timetable</a></li>
+                                        <li><a href="#.">Why Us</a></li>
+                                        <li><a href="#.">Specilaties</a></li>
+                                        <li><a href="#.">Contact Us</a></li>
+                                        <li><a href="#.">Events</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>-->
+                        <div class="col-md-6">
+                            <!--<div class="col-md-3">-->
+                            <div class="useful-links">
+                                <div class="title">
+                                    <h5>Products</h5>
+                                </div>
+
+                                <div class="detail">
+                                    <ul>
+                                        {% for i in products_list %}
+                                        <li class="products-list"><a href="/product/{{i.link}}">{{i.name}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--
+                        <div class="col-md-3">
+
+
+                            <div class="title">
+                                <h5>LATEST TWEETS</h5>
+                            </div>
+
+                            <div class="detail">
+
+                                <div class="tweets">
+
+                                    <div class="icon">
+                                        <i class="icon-yen"></i>
+                                    </div>
+
+                                    <div class="text">
+                                        <p><a href="#.">@Rotography</a> Please kindly use Support Forum: <a href="#.">Industry.co.uk</a></p>
+                                        <span>3 days ago</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tweets">
+
+                                    <div class="icon">
+                                        <i class="icon-yen"></i>
+                                    </div>
+
+                                    <div class="text">
+                                        <p>A quick launcher for WordPress dashboard <a href="#.">@Industry</a></p>
+                                        <span>about a week ago</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        
+                        <div class="col-md-3">
+
+                            <div class="newsletter">
+                                <div class="title">
+                                    <h5>NEWSLETTER</h5>
+                                </div>
+
+                                <div class="detail">
+
+                                    <div class="signup-text">
+                                        <i class="icon-dollar"></i>
+                                        <span>Sign up with your name and email to get updates fresh updates.</span>
+                                    </div>
+
+                                    <div class="form">
+                                        <p class="subscribe_success" id="subscribe_success" style="display:none;"></p>
+                                        <p class="subscribe_error" id="subscribe_error" style="display:none;"></p>
+
+                                        <form name="subscribe_form" id="subscribe_form" method="post" action="#" onSubmit="return false">
+                                            <input type="text" data-delay="300" placeholder="Your Name" name="subscribe_name" id="subscribe_name" onKeyPress="removeChecks();" class="input">
+                                            <input type="text" data-delay="300" placeholder="Email Address" name="subscribe_email" id="subscribe_email" onKeyPress="removeChecks();" class="input">
+                                            <input name="Subscribe" type="submit" value="Subscribe" onClick="validateSubscription();">
+                                        </form>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+-->
+                        <div class="col-md-4">
+
+                            <div class="get-touch">
+                                <div class="title">
+                                    <h5>GET IN TOUCH</h5>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="get-touch">
+
+
+                                        <span class="text">Contact us or visit our location on below given address</span>
+
+
+                                        <ul>
+                                            {% if company.address_line1 %}
+                                            <li><i class="icon-location"></i>
+                                                <span>{{company.address_line1}}
+                                            {% if company.address_line3 %}
+                                            ,{{company.address_line3}}
+                                            {% endif %}
+                                            </span></li> {% endif %} {% if company.contact_number1 %}
+                                            <li><i class="icon-phone4"></i> <span> {{company.contact_number1}}</span> {% if company.contact_number2%}
+                                                <span>, {{company.contact_number2}}</span> {% endif %}
+                                            </li>
+                                            {% endif %} {% if company.email %}
+                                            <li><a href="#."><i class="icon-dollar"></i> <span>{{company.email}}</span></a></li>
+                                            {% endif %}
+                                        </ul>
+
+
+                                        <!--  <span><b>Web:</b> <a href="">Tulsi Laser Technology</a></span>-->
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <span class="copyrights">Copyright &copy; {% now "Y" %} {{company.company_name}}. All right reserved.</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="social-icons">{% if company.fb_link %}
+                                <a href="{{company.fb_link}}" class="fb"><i class="icon-euro"></i></a> {% endif %} {% if company.twitter_link %}
+                                <a href="{{company.twitter_link}}" class="tw"><i class="icon-yen"></i></a> {% endif %} {% if company.insta_link%}
+                                <a href="{{company.insta_link}}" class="gp"><i class="fa fa-instagram"></i></a> {% endif %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+        <!--End Footer-->
+
+
+        <a href="#0" class="cd-top"></a>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="{% static 'core/assets/js/jquery.min.js' %}"></script>
+
+    <!-- SMOOTH SCROLL -->
+    <script type="text/javascript" src="{% static 'core/assets/js/scroll-desktop.js' %}"></script>
+    <script type="text/javascript" src="{% static 'core/assets/js/scroll-desktop-smooth.js' %}"></script>
+
+    <!-- START REVOLUTION SLIDER -->
+    <script type="text/javascript" src="{% static 'core/assets/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'core/assets/js/jquery.themepunch.tools.min.js' %}"></script>
+
+
+    <!-- Date Picker and input hover -->
+    <!-- <script type="text/javascript" src="{% static 'core/assets/js/classie.js' %}"></script> -->
+    <!-- <script type="text/javascript" src="{% static 'core/assets/js/jquery-ui-1.10.3.custom.js' %}"></script> -->
+
+    <!-- Fun Facts Counter -->
+    <!-- <script type="text/javascript" src="{% static 'core/assets/js/counter.js' %}"></script> -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Welcome Tabs -->
+    <script type="text/javascript" src="{% static 'core/assets/js/scripts.js' %}"></script>
+
+    <!-- Welcome Tabs -->
+    <script type="text/javascript" src="{% static 'core/assets/js/tabs.js' %}"></script>
+
+
+    <!-- All Carousel -->
+    <script type="text/javascript" src="{% static 'core/assets/js/owl.carousel.js' %}"></script>
+
+
+    <script type="text/javascript" src="{% static 'core/assets/js/waypoints.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'core/assets/js/jquery.counterup.min.js' %}"></script>
+
+    <!-- Mobile Menu -->
+    <script type="text/javascript" src="{% static 'core/assets/js/jquery.mmenu.min.all.js' %}"></script>
+
+    <!-- All Scripts -->
+    <script type="text/javascript" src="{% static 'core/assets/js/bootstrap.min.js' %}"></script>
+
+    <!-- All Scripts -->
+    <script type="text/javascript" src="{% static 'core/assets/js/custom.js' %}"></script>
+
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript">
+        jQuery('.tp-banner').show().revolution({
+            dottedOverlay: "none",
+            delay: 16000,
+            startwidth: 1170,
+            startheight: 720,
+            hideThumbs: 200,
+
+            thumbWidth: 100,
+            thumbHeight: 50,
+            thumbAmount: 5,
+
+            navigationType: "nexttobullets",
+            navigationArrows: "solo",
+            navigationStyle: "preview",
+
+            touchenabled: "on",
+            onHoverStop: "on",
+
+            swipe_velocity: 0.7,
+            swipe_min_touches: 1,
+            swipe_max_touches: 1,
+            drag_block_vertical: false,
+
+            parallax: "mouse",
+            parallaxBgFreeze: "on",
+            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+            keyboardNavigation: "off",
+
+            navigationHAlign: "center",
+            navigationVAlign: "bottom",
+            navigationHOffset: 0,
+            navigationVOffset: 20,
+
+            soloArrowLeftHalign: "left",
+            soloArrowLeftValign: "center",
+            soloArrowLeftHOffset: 20,
+            soloArrowLeftVOffset: 0,
+
+            soloArrowRightHalign: "right",
+            soloArrowRightValign: "center",
+            soloArrowRightHOffset: 20,
+            soloArrowRightVOffset: 0,
+
+            shadow: 0,
+            fullWidth: "on",
+            fullScreen: "off",
+
+            spinner: "spinner4",
+
+            stopLoop: "off",
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
+
+            shuffle: "off",
+
+            autoHeight: "off",
+            forceFullWidth: "off",
+
+
+
+            hideThumbsOnMobile: "off",
+            hideNavDelayOnMobile: 1500,
+            hideBulletsOnMobile: "off",
+            hideArrowsOnMobile: "on",
+            hideThumbsUnderResolution: 0,
+
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            startWithSlide: 0,
+            videoJsPath: "rs-plugin/videojs/",
+            fullScreenOffsetContainer: ""
+        });
+    </script>
+
+    <style>
+        @media all and (max-width: 720px) {
+            div.largescreen {
+                display: none;
+            }
+        }
+        
+        @media all and (min-width: 720px) {
+            div.smallscreen {
+                display: none;
+            }
+        }
+    </style>
+
+</body>
+
+<a style="display:none" href="https://pdfcroppers.com">Merge pdf online</a>
+<a style="display:none" href="https://pdfcroppers.com/meesho/">Crop meesho pdf online</a>
+<a style="display:none" href="https://pdfcroppers.com/flipkart/">Crop flipkart pdf online</a>
+<a style="display:none" href="https://pdfcroppers.com/amazon/">Crop amazon pdf online</a>
+<a style="display:none" href="https://pdfcroppers.com/split/">Split pdf online free</a>
+<a style="display:none" href="https://pdfcroppers.com/img-to-pdf/">Conver Image to pdf online free</a>
+<a style="display:none" href="https://pdfcroppers.com/delete-pdf-pages/">Delete pages from pdf online free</a>
+<a style="display:none" href="https://pdfcroppers.com/rotate-pdf/">Rotate pdf pages online free</a>
+<a style="display:none" href="https://pdfcroppers.com/fba-label/">Generate FBA India Label Hassle free</a>
+<a style="display:none" href="https://pdfcroppers.com/amazon-order-management-system">Amazon Order Analysis Software</a>
+
+<a style="display:none" href="https://yoinsta.com">Download instagram post</a>
+<a style="display:none" href="https://yoinsta.com/videos-downloader-for-instagram">Download instagram Video online free</a>
+<a style="display:none" href="https://yoinsta.com/how-to-pc">Download instagram photo into pc</a>
+<a style="display:none" href="https://yoinsta.com/how-to-android">Download instagram photo in android</a>
+<a style="display:none" href="https://yoinsta.com/instagram-profile-viewer">Instagram profile photo view hd</a>
+<a style="display:none" href="https://yoinsta.com/instagram-reels-downloader">Instagram reels downloader </a>
+<a style="display:none" href="https://yoinsta.com/instagram-igtv-downloader">Download IGTV videos</a>
+<a style="display:none" href="https://yoinsta.com/most-popular-top-10-trending-instagram-hashtags/">Most Popular instagram hashtags</a>
+<a style="display:none" href="https://yoinsta.com/how-delete-instagram-messages-both-sides">How to delete Instagram message from both side</a>
+<a style="display:none" href="https://yoinsta.com/earn-money-using-instagram">Earn money using instagram</a>
+
+
+<a style="display:none" href="https://statusforlife.com">whatsapp status and hd wallpaper</a>
+<a style="display:none" href="http://statusforlife.com/wallpaper/image-status/">Latest Image status</a>
+<a style="display:none" href="http://statusforlife.com/status/text-status/">Instagram Facebook text status</a>
+<a style="display:none" href="http://statusforlife.com/wallpaper/mobile-wallpaper/">HD mobile wallpaper</a>
+<a style="display:none" href="http://statusforlife.com/status/instagram-caption/">Caption for Instagram Ig Facebook</a>
+<a style="display:none" href="http://statusforlife.com/status/birthday-wish/">Happy birthday wish</a>
+<a style="display:none" href="http://statusforlife.com/wallpaper/desktop-wallpaper/">HD desktop wallpaper</a>
+<a style="display:none" href="http://statusforlife.com/status/festival-wish/">Festival Wishes</a>
+<a style="display:none" href="http://statusforlife.com/status/whatsapp-status/">Whatsapp status</a>
+<a style="display:none" href="http://statusforlife.com/status/whatsapp-staatus/">Hindi Sad Happy Status</a>
+
+<a style="display:none" href="https://veriffer.com">Product authentication system</a>
+<a style="display:none" href="https://file-cloud.one">Online file sharing system</a>
+<a style="display:none" href="https://micronstars.com">All IT services</a>
+<a style="display:none" href="https://ordercalci.com">E-commerce Order analysis system</a>
+<a style="display:none" href="https://ver.surf">Online URL shortner</a>
+<a style="display:none" href="https://tulsilaser.com">Diamond laset cutting machine</a>
+
+<a style="display:none" href='https://www.provada.in/collections/kurtis-for-women'>kurtis for women</a>
+</html>

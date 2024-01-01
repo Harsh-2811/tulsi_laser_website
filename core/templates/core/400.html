@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %} {% load static %}  {% block content %}
+
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="{% url 'products' %}"><span style="font-size: medium;">Wrong Turn</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="single-project">
+    <div class="container">
+        <div class="row">
+          <div class="d-flex h-100 text-center align-items-center">
+                    <h2>400 Bad Request response</h2>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock content%}

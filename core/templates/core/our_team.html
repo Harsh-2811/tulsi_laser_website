@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Our Team {% endblock page_name %} {% block content %}
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>Our Team</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="our-team-page">
+    <div class="container">
+        <div class="row">
+
+            <div class="members">
+                {% for member in team_member %}
+
+                <div class="col-md-3">
+                    <div class="member">
+                        <figure>
+                            <img src="{{member.person_image.url}}" alt="awsome image" />
+                            <div class="overlay">
+                                <div class="inner-box">
+                                    <ul class="social">
+                                        {% if member.facebook_profile_link %}
+                                        <li><a href="{{member.facebook_profile_link}}"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+                                        {% endif %} {% if member.linked_in_profile_link %}
+                                        <li><a href="{{member.linked_in_profile_link}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        {% endif %} {% if member.skype_profile_link %}
+                                        <li><a href="{{member.skype_profile_link}}"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="author-info">
+                            <h4>{{member.name}} </h4>
+                            <p>{{member.designation}}</p>
+                            <ul>
+                                <li>Tel: {{member.contact_number}}</li>
+                                <li>Mail: {{member.mail_id}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+{% endblock content%}

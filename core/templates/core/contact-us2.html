@@ -1,0 +1,121 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Contact Us {% endblock page_name %} {% block content %}
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>Contact Us</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--Start Content-->
+<div class="content">
+    <div class="contact-us">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="our-location">
+                        <div class="map">
+                            {{company.map_location|safe}}
+                        </div>
+                        <div class="get-directions">
+                            <form action="http://maps.google.com/maps" method="get" target="_blank">
+                                <input type="text" name="saddr" placeholder="Enter Your Address" />
+                                <input type="hidden" name="daddr" value="{{company.map_address_written}}" />
+                                <input type="submit" value="Get directions" class="direction-btn" />
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="leave-msg dark-back">
+            <div class="container">
+
+                <div class="rox">
+                    <div class="col-md-7">
+
+                        <div class="main-title">
+                            <h2><span>We'd</span> Love to <span>Hear From You</span></h2>
+                            <p>Fill the details below with your concern and we will contact you with resolution.</p>
+                        </div>
+
+                        <div class="form">
+                            <div class="row">
+                                <p class="success" id="success" style="display:none;"></p>
+                                <p class="error" id="error" style="display:none;"></p>
+                                <form name="contact_form" id="contact_form" method="post" action="#" onSubmit="return false">
+                                    <div class="col-md-4"><input type="text" data-delay="300" placeholder="Your full name" name="name" id="name" class="input"></div>
+                                    <div class="col-md-4"><input type="text" data-delay="300" placeholder="E-mail Address" name="email" id="email" class="input"></div>
+                                    <div class="col-md-4"><input type="text" data-delay="300" placeholder="Contact Number" name="contact_num" id="contact_num" class="input"></div>
+                                    <div class="col-md-12"><textarea data-delay="500" class="required valid" placeholder="Message" name="content" id="content"></textarea></div>
+                                    <input type="hidden" id="subject" value="Inquiry">
+                                    <div class="col-md-3">
+                                        <button id="btn-send" name="submit_appointment" class="btn-submit">Submit</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-5" id="contact">
+
+                        <div class="contact-get">
+                            <div class="main-title">
+                                <h2><span>GET IN</span> Touch</h2>
+                                <p>You can visit our premises at below given address or can contact us via email or call.</p>
+                            </div>
+
+                            <div class="get-in-touch">
+                                <div class="detail">
+                                    {% if company.contact_number1 %}
+                                    <span><b>Phone:</b> {{company.contact_number1}}</span> {% endif %} {% if company.email %}
+                                    <span><b>Email:</b> {{company.email}}</span> {% endif %}
+
+                                    <!--  <span><b>Web:</b> <a href="">Tulsi Laser Technology</a></span>-->
+                                    {% if company.address_line1 %}
+                                    <span><b>Address:</b> {{company.address_line1}}
+									{% if company.address_line2 %}
+									,{{company.address_line2}}
+									{% endif %}
+									{% if company.address_line3 %}
+									,{{company.address_line3}}
+									{% endif %}
+									</span> {% endif %}
+                                </div>
+
+                                <!--<div class="social-icons">
+                                    <a href="#." class="fb"><i class="icon-euro"></i></a>
+                                    <a href="#." class="tw"><i class="icon-yen"></i></a>
+                                    <a href="#." class="gp"><i class="icon-google-plus"></i></a>
+                                    <a href="#." class="vimeo"><i class="icon-vimeo4"></i></a>
+                                </div>-->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<!--End Content-->
+
+{% endblock content%}

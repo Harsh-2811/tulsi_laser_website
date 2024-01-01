@@ -1,0 +1,766 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+
+<!--Start Banner-->
+
+<div class="tp-banner-container">
+    <div class="tp-banner">
+        <ul>
+            <!-- SLIDE  -->
+
+
+            <li data-transition="fade" data-slotamount="2" data-speed="100" data-delay="7000" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
+
+                <img src="{% static 'core/assets/images/slides/banenr-img1.webp' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                <div class="tp-caption grey_heavy_723 skewfromrightshort tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="210" data-speed="500" data-start="2250" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                    style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">We help Industries
+                </div>
+
+                <div class="tp-caption grey_heavy_72-light skewfromrightshort tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="280" data-speed="500" data-start="2250" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                    style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Inovate and Grow
+                </div>
+
+                <div class="tp-caption grey_regular_188 customin tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="357" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="500" data-start="2600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                    <div style="text-align:left;">Industry has consistently embraced innovation to provide a superior <br/>level of excellence for all over valuable customers. </div>
+                </div>
+                <!-- 
+                <div class="tp-caption grey_regular_18 customin tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="429" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="800" data-start="3100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1">
+                    <a href="about-us.html" class="read-more">read more</a>
+
+                </div>
+
+                <div class="tp-caption grey_regular_189 customin tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="429" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="800" data-start="3100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1">
+                    <a href="about-us.html" class="read-more">contact us</a>
+
+                </div> -->
+
+            </li>
+
+
+
+            <li data-transition="fade" data-slotamount="2" data-speed="100" data-delay="7000" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
+
+                <img src="{% static 'core/assets/images/slides/banenr-img2.webp' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                <div class="tp-caption grey_heavy_729 skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10" data-x="0" data-y="115" data-speed="500" data-start="2250" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1"
+                    data-endelementdelay="0.1" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Our
+                </div>
+
+                <div class="tp-caption grey_heavy_72-light skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10" data-x="145" data-y="115" data-speed="500" data-start="2950" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1"
+                    data-endelementdelay="0.1" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Solutions
+                </div>
+
+
+                <div class="tp-caption grey_regular_181 customin tp-resizeme rs-parallaxlevel-0 new" data-x="0" data-y="180" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="800" data-start="3400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1" style="z-index: 9; color:#FFFFFF: auto; max-height: auto; white-space: nowrap;">
+                    <div style="text-align:left;">With over {{ total_year }} years of experience &amp; the company’s factory has a highest production’s <br/>capacity. </div>
+                </div>
+
+
+                <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10" data-x="0" data-y="265" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="600" data-start="4000" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index: 8;"><img src="{% static 'core/assets/images/slides/plus.png' %}" alt="">
+                </div>
+
+
+                <div class="tp-caption grey_regular_181 sfr fadeout tp-resizeme rs-parallaxlevel-10" data-x="38" data-y="265" data-speed="600" data-start="4100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                    data-endspeed="1000" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap; font-size: 18px;">Creditable Integrity
+                </div>
+
+                <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10" data-x="0" data-y="310" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="600" data-start="4300" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index: 8;"><img src="{% static 'core/assets/images/slides/plus.png' %}" alt="">
+                </div>
+
+
+                <div class="tp-caption grey_regular_181 sfr fadeout tp-resizeme rs-parallaxlevel-10" data-x="38" data-y="310" data-speed="600" data-start="4400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                    data-endspeed="1000" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap; font-size: 18px;">Effective Team Work
+                </div>
+
+                <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10" data-x="0" data-y="355" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="600" data-start="4600" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index: 8;"><img src="{% static 'core/assets/images/slides/plus.png' %}" alt="">
+                </div>
+
+
+                <div class="tp-caption grey_regular_181 sfr fadeout tp-resizeme rs-parallaxlevel-10" data-x="38" data-y="355" data-speed="600" data-start="4700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                    data-endspeed="1000" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap; font-size: 18px;">Quality Assurance
+                </div>
+
+                <!-- <div class="tp-caption arrowicon customin  rs-parallaxlevel-10" data-x="0" data-y="430" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850"
+                    data-start="5500" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index:12000;">
+                    <a href="services.html"><img src="{% static 'core/assets/images/slides/icon1.png' %}" alt=""></a>
+                </div>
+
+                <div class="tp-caption arrowicon customin  rs-parallaxlevel-10" data-x="108" data-y="430" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850"
+                    data-start="6000" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index:12000;">
+                    <a href="services.html"><img src="{% static 'core/assets/images/slides/icon2.png' %}" alt=""></a>
+                </div>
+
+                <div class="tp-caption arrowicon customin  rs-parallaxlevel-10" data-x="216" data-y="430" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850"
+                    data-start="6500" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index:12000;">
+                    <a href="services.html"><img src="{% static 'core/assets/images/slides/icon3.png' %}" alt=""></a>
+                </div>
+
+                <div class="tp-caption arrowicon customin  rs-parallaxlevel-10" data-x="324" data-y="430" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850"
+                    data-start="7000" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index:12000;">
+                    <a href="services.html"><img src="{% static 'core/assets/images/slides/icon4.png' %}" alt=""></a>
+                </div>
+
+
+                <div class="tp-caption arrowicon customin  rs-parallaxlevel-10" data-x="432" data-y="430" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850"
+                    data-start="7500" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1000" style="z-index:12000;">
+                    <a href="services.html"><img src="{% static 'core/assets/images/slides/view-all.png' %}" alt=""></a>
+                </div> -->
+            </li>
+
+
+            <li data-transition="fade" data-slotamount="2" data-speed="100" data-delay="7000" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
+
+                <img src="{% static 'core/assets/images/slides/banenr-img3.webp' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+
+
+
+                <div class="tp-caption grey_heavy_72-light customin randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="0" data-y="220" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                    data-speed="650" data-start="1050" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Leader in
+                </div>
+
+
+                <div class="tp-caption grey_heavy_729 customin randomrotateout tp-resizeme rs-parallaxlevel-10" data-x="0" data-y="286" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                    data-speed="650" data-start="2500" data-easing="Power3.easeInOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Laser Technologies
+                </div>
+
+
+                <div class="tp-caption grey_regular_181 customin tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="362" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="500" data-start="4600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                    <div style="text-align:left;">Drop a message in request quote and will call you back.</div>
+                </div>
+
+
+                <!-- <div class="tp-caption grey_regular_18 customin tp-resizeme rs-parallaxlevel-0" data-x="0" data-y="429" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="800" data-start="4900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">
+                    <div style="text-align:left; background:#e9c500;">
+                        <a href="about-us.html" class="read-more">read more</a>
+                    </div>
+                </div> -->
+
+            </li>
+        </ul>
+        <div class="tp-bannertimer"></div>
+    </div>
+</div>
+
+<!--End Banner-->
+
+
+
+<!--Start Content-->
+<div class="content">
+
+    <!--Start Services-->
+    <div class="services-two dark-back">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    {% for services in values %}
+                    <div class="service-sec">
+
+                        <div class="icon2">
+                            <img src="{{services.icon_image.url}}" />
+                        </div>
+
+                        <div class="detail">
+                            <h5>{{services.title}}</h5>
+                            <p>{{services.value}}</p>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                    <div id="demo">
+
+
+                        <div class="span12">
+                            <div id="services-slide" class="owl-carousel">
+                                {% for services in values %}
+                                <div class="item"><img src="{{services.image.url}}" alt="{{services.alt1}}"></div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--End Services-->
+
+
+    <!--Start Appointment-->
+    <div class="make-appointment-two" id="request-quote">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <!-- <div class="col-md-4">
+                            <div class="worker">
+                                <img src="{{about_us.image_main1.url}}" />
+                            </div>
+                        </div> -->
+                        <div class="col-md-8">
+                            <div class="txt-wraper">
+                                {{about_us.description|safe}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="appointment-form">
+
+                        <div class="main-title">
+                            <h2><span>Request <br></span> for Quote</h2>
+                            <p>If you need a perfect laser solution of Diamond laser cuttnig machine then kindly contact us using below form.</p>
+                        </div>
+
+                        <div class="form">
+                            <section class="bgcolor-a">
+                                <p class="error" id="error" style="display:none;"></p>
+                                <p class="success" id="success" style="display:none;"></p>
+
+                                <div name="appointment_form" id="appointment_form" method="post" onSubmit="return false">
+                                    <span class="input input--kohana">
+					<input class="input__field input__field--kohana" type="text" id="name" name="input-29" />
+					<label class="input__label input__label--kohana" for="input-29">
+                        <i class="icon-user6 icon icon--kohana"></i>
+						<span class="input__label-content input__label-content--kohana">Your Name</span>
+                                    </label>
+                                    </span>
+                                    <span class="input input--kohana">
+					<input class="input__field input__field--kohana" type="text" id="email" name="input-30"/>
+					<label class="input__label input__label--kohana" for="input-30">
+						<i class="icon-dollar icon icon--kohana"></i>
+						<span class="input__label-content input__label-content--kohana">Email Address</span>
+                                    </label>
+                                    </span>
+                                    <span class="input input--kohana last">
+					<input class="input__field input__field--kohana" type="text" id="contact_num" name="input-31"/>
+					<label class="input__label input__label--kohana" for="input-31">
+						<i class="icon-phone5 icon icon--kohana"></i>
+						<span class="input__label-content input__label-content--kohana">Phone Number</span>
+                                    </label>
+                                    </span>
+                                    <span class="input input--kohana">
+					<input class="input__field input__field--kohana" type="text" id="content" name="input-29" />
+					<label class="input__label input__label--kohana" for="input-29">
+                        <i class="icon-file-text icon icon--kohana"></i>
+						<span class="input__label-content input__label-content--kohana">Message</span>
+                                    </label>
+                                    </span>
+                                    <input type="hidden" id="subject" value="Requst for quote">
+                                    <button id="btn-send" name="submit_appointment" class="btn-submit">Get a Quote</button>
+                                    <!--onClick="validateAppointment();"-->
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Appointment-->
+
+    <!--Start Welcome -- >
+    <div class="welcome dark-back basic">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title">
+                        <h2><span>Welcome to</span> Industry Guide</h2>
+                        <p>If you need a doctor for to consectetuer Lorem ipsum dolor, consectetur adipiscing elit. Ut volutpat eros adipiscing nonummy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tabbed-nav">
+                <ul>
+                    <li><a>Fabrics</a></li>
+                    <li><a>Departments</a></li>
+                    <li><a>New Sections</a></li>
+                    <li><a>Latest Tehnologies</a></li>
+                </ul>
+
+
+                <div>
+
+                    <div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="welcome-serv-img">
+                                    <img src="{% static 'core/assets/images/services-img2.jpg' %}" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="detail">
+                                    <h4>Washington Science Institute</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat Duis.<br/><br/> Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                    <a href="about-us.html">Read More</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="welcome-serv-img">
+                                    <img src="{% static 'core/assets/images/services-img3.jpg' %}" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="detail">
+                                    <h4>Industry Guide Departments</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat Duis.<br/><br/> Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                    <a href="about-us.html">Read More</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="welcome-serv-img">
+                                    <img src="{% static 'core/assets/images/services-img1.jpg' %}" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="detail">
+                                    <h4>Our new opened sections</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat Duis.<br/><br/> Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                    <a href="about-us.html">Read More</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="welcome-serv-img">
+                                    <img src="{% static 'core/assets/images/services-img4.jpg' %}" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="detail">
+                                    <h4>Latest Technology</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat Duis.<br/><br/> Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                    <a href="about-us.html">Read More</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--End Welcome-->
+    <style>
+         :root {
+            --surface-color: #fff;
+            --curve: 40;
+        }
+        
+        .card {
+            position: relative;
+            display: block;
+            border-radius: calc(var(--curve) * 1px);
+            overflow: hidden;
+            text-decoration: none;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+        
+        .card__header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            border-radius: calc(var(--curve) * 1px) 0 0 0;
+            background-color: #003e4b;
+            transform: translateY(-100%);
+            transition: .2s ease-in-out;
+        }
+        
+        .card__image {
+           /* width: 100%;*/
+            height: auto;
+        }
+        
+        .card__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: calc(var(--curve) * 1px);
+            background-color: var(--surface-color);
+            transform: translateY(100%);
+            transition: .2s ease-in-out;
+        }
+        
+        .card__title {
+            font-size: 1em;
+            margin: 0 0 .3em;
+            color: #dac26c;
+            font-weight: bold;
+        }
+        
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+        
+        h1 {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
+            opacity: 1;
+            transform: translateZ(0) scale(1);
+        }
+        
+        [data-aos][data-aos][data-aos-easing="ease"],
+        body[data-aos-easing="ease"] [data-aos] {
+            transition-timing-function: ease;
+        }
+        
+        [data-aos][data-aos][data-aos-duration="400"],
+        body[data-aos-duration="400"] [data-aos] {
+            transition-duration: .4s;
+        }
+        
+        [data-aos^="zoom"][data-aos^="zoom"] {
+            opacity: 0;
+            transition-property: opacity, transform;
+        }
+    </style>
+
+    <div class="testimonials-two">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title2">
+                        <h2>Our Products</h2>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="cards">
+
+                {% for prod in products_list %}
+                <li class="aos-init aos-animate" data-aos="zoom-in">
+                    <a href="product/{{prod.link}}" class="card">
+                        <img src="{{prod.image3.url}}" class="card__image" alt="{{prod.alt1}}">
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">{{prod.name}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+
+    {% if yt_videos.count > 0 %}
+    <!--Start Videos-->
+    <div class="latest-news dark-back">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title2">
+                        <h2>Video Gallary</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for video in yt_videos %}
+                <div class="col-md-6">
+                    <iframe width="100%" height="360vh" src="https://www.youtube.com/embed/{{video.YT_code}}">
+                    </iframe>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <!--End Videos-->
+    <!--Start Our team-->
+    {% if testimonial %}
+
+    <div class="testimonials-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title">
+                        <h2><span>Words From </span> Our Customers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="testimonials" class="owl-carousel owl-theme">
+                    {% for notes in testimonial %}
+                    <div class="item">
+                        <blockquote>
+                            <div class="icon-holder">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                            </div>
+                            {{notes.testimonials}}
+                        </blockquote>
+
+
+                        <div class="testimonials-author">
+                            <div class="author-img">
+                                <img class="img-responsive" src="{{notes.customer_photo.url}}" />
+                            </div>
+                            <h4>{{notes.customer_name}}</h4>
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--End Our Team-->
+
+
+
+<!--Start Latest News-->
+<div class="latest-news dark-back">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-title">
+                    <h2><span>Latest News from</span> Industry Guide</h2>
+                    <!-- <p>If you need a doctor for to consectetuer Lorem ipsum dolor, consectetur adipiscing elit. Ut volutpat eros adipiscing nonummy.</p>-->
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="latest-news">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+
+                        <div id="owl-demo" class="owl-carousel">
+                            {% for news in news %}
+                            <div class="post item">
+                                <img class="lazyOwl" src="{{news.banner_image.url}}" alt="">
+                                <div class="detail">
+                                    <img src="{% static 'core/assets/images/news-dr2.jpg' %}" alt="">
+                                    <h4><a href="#">{{news.title}}</a></h4>
+                                    <p>{{news.content|slice:150|safe}}</p>
+                                    <span><i class="icon-clock3"></i> {{news.created_on|date:"M d, Y"}}</span>
+                                    <!-- <span class="comment"><a href="news-detail.html"><i class="icon-icons206"></i> 5 Comments</a></span> -->
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!-- <div class="post item">
+                                <img class="lazyOwl" src="{% static 'core/assets/images/news-img2.jpg' %}" alt="">
+                                <div class="detail">
+                                    <img src="{% static 'core/assets/images/news-dr2.jpg' %}" alt="">
+                                    <h4><a href="news-detail.html">Laboratory Tests</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
+                                    <span><i class="icon-clock3"></i> Apr 09, 2016</span>
+                                    <span class="comment"><a href="news-detail.html"><i class="icon-icons206"></i> 3 Comments</a></span>
+                                </div>
+                            </div>
+
+                            <div class="post item">
+                                <img class="lazyOwl" src="{% static 'core/assets/images/news-img3.jpg' %}" alt="">
+                                <div class="detail">
+                                    <img src="{% static 'core/assets/images/news-dr1.jpg' %}" alt="">
+                                    <h4><a href="news-detail.html">Research Center</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
+                                    <span><i class="icon-clock3"></i> Mar 28, 2016</span>
+                                    <span class="comment"><a href="news-detail.html"><i class="icon-icons206"></i> 0 Comments</a></span>
+                                </div>
+                            </div>
+
+                            <div class="post item">
+                                <img class="lazyOwl" src="{% static 'core/assets/images/news-img4.jpg' %}" alt="">
+                                <div class="detail">
+                                    <img src="{% static 'core/assets/images/news-dr2.jpg' %}" alt="">
+                                    <h4><a href="news-detail.html">Child Birth</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
+                                    <span><i class="icon-clock3"></i> Mar 15, 2016</span>
+                                    <span class="comment"><a href="news-detail.html"><i class="icon-icons206"></i> 0 Comments</a></span>
+                                </div>
+                            </div>
+
+                            <div class="post item">
+                                <img class="lazyOwl" src="{% static 'core/assets/images/news-img5.jpg' %}" alt="">
+                                <div class="detail">
+                                    <img src="{% static 'core/assets/images/news-dr2.jpg' %}" alt="">
+                                    <h4><a href="news-detail.html">Special Treatment</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
+                                    <span><i class="icon-clock3"></i> Mar 04, 2016</span>
+                                    <span class="comment"><a href="news-detail.html"><i class="icon-icons206"></i> 11 Comments</a></span>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+<!--End Latest News-->
+
+
+</div>
+<!--End Content-->
+
+<section class="partners">
+    <div class="container">
+    <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title2">
+                        <h2>Our Clients</h2>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="about-us-our-partners" class="owl-carousel owl-theme">
+                    {% for cust in customers %}
+                    <div class="item-partner">
+                        <div class="image">
+                            <img class="img-responsive" style="height: 100%;margin-left: auto;margin-right: auto" src="{{cust.compnay_logo.url}}" alt="">
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content%}

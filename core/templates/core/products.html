@@ -1,0 +1,165 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Our Products {% endblock page_name %} {% block content %}
+ <style>
+         :root {
+            --surface-color: #fff;
+            --curve: 40;
+        }
+        
+        .card {
+            position: relative;
+            display: block;
+            border-radius: calc(var(--curve) * 1px);
+            overflow: hidden;
+            text-decoration: none;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+        
+        .card__header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            border-radius: calc(var(--curve) * 1px) 0 0 0;
+            background-color: #003e4b;
+            transform: translateY(-100%);
+            transition: .2s ease-in-out;
+        }
+        
+        .card__image {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: calc(var(--curve) * 1px);
+            background-color: var(--surface-color);
+            transform: translateY(100%);
+            transition: .2s ease-in-out;
+        }
+        
+        .card__title {
+            font-size: 1em;
+            margin: 0 0 .3em;
+            color: #dac26c;
+            font-weight: bold;
+        }
+        
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+        
+        h1 {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
+            opacity: 1;
+            transform: translateZ(0) scale(1);
+        }
+        
+        [data-aos][data-aos][data-aos-easing="ease"],
+        body[data-aos-easing="ease"] [data-aos] {
+            transition-timing-function: ease;
+        }
+        
+        [data-aos][data-aos][data-aos-duration="400"],
+        body[data-aos-duration="400"] [data-aos] {
+            transition-duration: .4s;
+        }
+        
+        [data-aos^="zoom"][data-aos^="zoom"] {
+            opacity: 0;
+            transition-property: opacity, transform;
+        }
+    </style>
+<!--End Header-->
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>Our Products</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="projects-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- <div class="controls">
+                <ul class="list-inline">
+                    <li class="active">
+                        <span class="hvr-underline-from-left" data-filter="all" class="filter">All Projects</span>
+                    </li>
+                    <li>
+                        <span class="hvr-underline-from-left" data-filter=".green" class="filter">Agricultural </span>
+                    </li>
+                    <li>
+                        <span class="hvr-underline-from-left" data-filter=".blue" class="filter">Mechanical  </span>
+                    </li>
+                    <li>
+                        <span class="hvr-underline-from-left" data-filter=".pink" class="filter">Engineering</span>
+                    </li>
+                    <li>
+                        <span class="hvr-underline-from-left" data-filter=".cash" class="filter">Gas &amp; Oil</span>
+                    </li>
+                </ul>
+            </div> -->
+              <ul class="cards">
+
+    {% for prod in products_list %}
+                <li class="aos-init aos-animate" data-aos="zoom-in">
+                    <a href="/product/{{prod.link}}" class="card">
+                        <img src="{{prod.image1.url}}" class="card__image" alt="{{prod.alt1}}">
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">{{prod.name}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {% endfor %}
+</ul>
+                <br>
+          
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+{% endblock content%}

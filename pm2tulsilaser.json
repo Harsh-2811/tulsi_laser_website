@@ -1,0 +1,12 @@
+ {
+  "apps": [
+    {
+      "name": "tulsilaser",
+      "args": "runserver",
+      "script": "manage.py",
+      "exec_mode": "fork",
+      "exec_interpreter": "python3",
+      "error_file": "/dev/null"
+    }
+  ]
+ }

@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Testimonials {% endblock page_name %} {% block content %}
+
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>Testimonials</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="testimonials-page">
+    <div class="container">
+        <div class="row">
+            {% for t in testimonials %}
+            <div class="col-md-3">
+                <div class="box">
+                    <figure>
+                        <img src="{{t.customer_photo.url}}" alt="" />
+                    </figure>
+                    <div class="header">
+                        <h6>{{t.customer_name}}</h6>
+                        <span>{{t.company_name}}</span>
+                    </div>
+
+                    <p>
+                        {{t.testimonials}}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock content%}

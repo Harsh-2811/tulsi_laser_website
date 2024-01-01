@@ -1,0 +1,213 @@
+{% extends 'core/base.html' %} {% load static %} {% block page_name %} Blog {% endblock page_name %} {% block content %}
+
+<!--End Header-->
+
+<section class="page-nav">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>Home</li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><span>
+                    Blog-Artical
+</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="left-wraper">
+
+                    <div class="news_one-single">
+                        <div class="img-box image">
+                            <img src="{{news.banner_image.url}}" width="100%" alt="{{news.alt1}}" />
+                        </div>
+                        <div class="text-box">
+                            <h4>{{news.title}} </h4>
+                            <p>
+                                <a href=""><i class="fa fa-clock-o" aria-hidden="true"></i>{{news.created_on|date:"M d, Y" }} </a> |
+                                <a href=""> <i class="fa fa-user" aria-hidden="true"></i>Admin </a> |
+                                <a href=""> <i class="fa fa-tags" aria-hidden="true"></i>{{news.category_tag}} </a>
+                                <!-- | <a href=""> <i class="fa fa-comments-o" aria-hidden="true"></i>05 Comments</a> -->
+                            </p>
+                            <div class="text">
+                                <p>
+                                    {{news.content|safe}}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="share-box">
+                        <div class="col-md-6">
+                            <p>
+                                Share This Story, Choose Your Platform!
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="pull-right">
+                                <li>
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="post-author">
+                        <div class="header">
+                            <h3>About the Author:</h3>
+                        </div>
+                        <div class="inner">
+                            <div class="img-box">
+                                <img src="images/author.jpg" />
+                            </div>
+                            <div class="text-box">
+                                <h4>Robert Davison</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare
+                                    nisi vitae.
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="comments">
+                        <div class="header">
+                            <h3>Comments</h3>
+                        </div>
+                        <div class="first-comment">
+                            <div class="media-left img-box"><img src="images/customer.jpg" /> </div>
+                            <div class="media-body text-box">
+                                <h5>Simona Shkrtel</h5>
+                                <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat cupidatat non proid pent.</p>
+                                <p> Dec 09 2015 |<a href=""> reply</a> </p>
+                            </div>
+                        </div>
+                        <div class="first-comment">
+                            <div class="media-left img-box"><img src="images/customer.jpg" /> </div>
+                            <div class="media-body text-box">
+                                <h5>Simona Shkrtel</h5>
+                                <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat cupidatat non proid pent.</p>
+                                <p> Dec 09 2015 |<a href=""> reply</a> </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-wraper-last">
+
+                        <div class="header">
+                            <h3>Leave a Comment</h3>
+                        </div>
+                        <div class="inner">
+                            <div class="form">
+                                <div class="row">
+                                    <p class="success" id="success" style="display:none;"></p>
+                                    <p class="error" id="error" style="display:none;"></p>
+                                    <form name="contact_form" id="contact_form" method="post" action="#" onSubmit="return false">
+                                        <div class="col-md-4"><input type="text" data-delay="300" placeholder="Your full name" name="contact_name" id="contact_name" class="input"></div>
+                                        <div class="col-md-4"><input type="text" data-delay="300" placeholder="E-mail Address" name="contact_email" id="contact_email" class="input"></div>
+                                        <div class="col-md-4"><input type="text" data-delay="300" placeholder="Subject" name="contact_subject" id="contact_subject" class="input"></div>
+                                        <div class="col-md-12"><textarea data-delay="500" class="required valid" placeholder="Message" name="message" id="message"></textarea></div>
+                                        <div class="col-md-3"><input name=" " type="submit" value="submit" onClick="validateContact();"></div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div> -->
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <aside class="blog-info">
+
+                    <div class="news-widget">
+                        <div class="title">
+                            <h4>Popular Post</h4>
+                        </div>
+
+                        {% for news in all_news|slice:":5" %}
+                        <div class="news-item">
+                            <figure>
+                                <img src="{{news.banner_image.url}}" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h5><a href="{% url 'news_artical' news.id %}"> {{news.title}}</a></h5>
+                                <p>
+                                    {{news.created_on|date:"M d, Y" }}
+                                </p>
+                            </div>
+                        </div> {% endfor %}
+                    </div>
+                    <!-- <div class="instigram-widget">
+                        <div class="title">
+                            <h4>Text Widget</h4>
+                        </div>
+                        <p>
+                            Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus. Phasellus ullamcorper.
+                        </p>
+
+                    </div> -->
+                    <div class="tags-widget">
+                        <div class="title">
+                            <h4>Popular Tags</h4>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href=""> Future</a>
+                            </li>
+                            <li>
+                                <a href="">Science</a>
+                            </li>
+                            <li>
+                                <a href="">Factory</a>
+                            </li>
+                            <li>
+                                <a href=""> Industrial</a>
+                            </li>
+                            <li>
+                                <a href="">Construction</a>
+                            </li>
+                            <li>
+                                <a href="">Glass</a>
+                            </li>
+                            <li>
+                                <a href="">Helmet</a>
+                            </li>
+                            <li>
+                                <a href="">Wind Energy</a>
+                            </li>
+                            <li>
+                                <a href="">Gloves</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content%}
